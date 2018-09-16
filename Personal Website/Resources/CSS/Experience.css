@@ -1,0 +1,46 @@
+@import url("Index.css");
+.handle-vspacing{
+margin-top:50px;
+}
+h2.condensed-font{
+	font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+	}
+
+.heading
+{
+	font-size:40px;
+}
+
+.subheading
+{
+	font-size:25px;
+}
+.resume-item
+{
+	box-sizing: border-box;
+	height:200px;
+	 width: 100%;
+}
+.resume-content
+{
+	float:left;
+  width: 70%;
+  height: 200px;
+}
+
+.resume-date
+{
+	float:right;
+  width: 30%;
+  height: 200px;
+  text-align:center;
+}
+.description
+{
+	margin-left:50px;
+	color: 	grey;
+	font-family: "Helvetica";
+	font-size:16px;
+}
+

@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+	margin:0;
+}
+html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 20%;
+    height: 100vh;
+}
+div.handle-padding{
+	padding-top:130px;
+}
+
+.main-section {
+	color: 	grey;
+	font-family: "Arial";
+    margin-top: 60px;
+	margin-left:50px;
+}
+
+.generic-shift-margin {
+	margin-left:90px;
+}
+
+.column2 {
+    float: left;
+    width: 80%;
+     height: 100vh;
+	 background-image :"./Images/Test3.jpeg";
+}
+
+.blue1 { color: #95C8D8; } /* Change color of h1 tag */
+.blue1subheading { color: #95C8D8; 
+font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;} /* Change color of h1 tag */
+
+h1{
+    font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+}
+.remove-link-underline
+{
+	text-decoration:none;
+	color:#95C8D8; 
+}
+
+.adjust-alignment
+{
+	padding-left: 50px;
+}
+
+/*img {
+  border-radius: 70%;
+  position: relative;
+  border: 7px solid #B0DFE5;
+}*/
+
+.profilepicture {
+	border-radius: 70%;
+  position: relative;
+	/*padding: 12px;*/
+	border: 7px solid #B0DFE5;
+	width:200px;
+	height:auto;
+}
+
+.icon {
+  position: relative;
+	/*padding: 12px;*/
+	margin-right:25px;
+	width:60px;
+	height:auto;
+}
+.icon-marginadj
+{
+	margin-left:50px;
+}
+
+.icon:hover
+{
+	background-color:#95C8D8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+        width: 100%;
+		    }
+}
+@media screen and (max-width: 600px) {
+    .column2 {
+        width: 100%;
+    }
+}
+
+.vertical-menu {
+    width: 200px;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	padding: 12px;
+	
+}
+
+.vertical-menu a {
+	vertical-align: middle;
+	text-align: center;
+	font-family: Arial;
+	display: inline-block;
+    background-color : rgba(32,153,196,0.0) !important;
+    color: 	grey;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+	color: white;
+}
+.grey1{
+	color: 	grey;
+	font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+}
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,35 @@
+.handle-vspacing{
+margin-top:100px;
+}
+
+.handle-vspacing-subheading{
+margin-top:60px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.horizontal-menu {
+    
+float: left;
+}
+.icon:hover
+{
+	background-color:#95C8D8;
+}
+
+
+h4.condensed-font{
+	font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+	}
+
+.tickicon {
+  position: relative;
+	/*padding: 12px;*/
+	margin-right:10px;
+	width:26px;
+	height:auto;
+}
