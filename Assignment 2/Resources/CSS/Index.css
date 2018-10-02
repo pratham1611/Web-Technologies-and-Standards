@@ -1,0 +1,22 @@
+.blue1 { color: #95C8D8; } /* Change color of h1 tag */
+img {
+  display: block;
+  border-radius:50%;
+  max-width: 70%;
+  height: auto;
+}
+@media screen and (max-width: 480px) {
+    .img {
+        width: 50%;
+		    }
+}
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }

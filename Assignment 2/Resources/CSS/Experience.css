@@ -1,0 +1,62 @@
+@import url("Index.css");
+.handle-vspacing{
+margin-top:50px;
+}
+h2.condensed-font{
+	font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+	}
+
+.heading
+{
+	font-size:40px;
+}
+.grey1{
+	color: 	grey;
+	font-family: "Helvetica", Times, serif;
+	font-stretch: condensed;
+}
+
+.subheading
+{
+	font-size:25px;
+	font-style:bold;
+}
+.resume-item
+{
+	box-sizing: border-box;
+	height:200px;
+	 width: 100%;
+}
+.fade-blue
+{
+	background-color :rgb(149,200,216,0.25);
+	
+}
+
+.fade-red
+{
+	background-color :rgb(255,0,0,0.25);
+}
+.resume-content
+{
+	float:left;
+  width: 70%;
+  height: 200px;
+}
+
+.resume-date
+{
+	float:right;
+  width: 30%;
+  height: 200px;
+  text-align:center;
+}
+.description
+{
+	margin-left:50px;
+	color: 	grey;
+	font-family: "Helvetica";
+	font-size:16px;
+}
+

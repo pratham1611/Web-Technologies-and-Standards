@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="Resources/CSS/Experience.css" type="text/css" rel="stylesheet">
+    <link href="Resources/CSS/Feedback.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+  <script type="text/javascript" language="JavaScript">
+start=true;
+popupcount=0;
+function begin() { //to populate the user and date while providing feedback
+var person = prompt("Who is providing the feedback?", "");
+var now = new Date();
+var tnode1=document.createTextNode("Feedback provided by "+ person);
+var enode1=document.createElement("br");
+var tnode2=document.createTextNode(" ("+now.getMonth()+"/"+now.getDate()+"/"+(now.getYear()+1900)+")");
+fnode=document.getElementById("nodeEx"); 
+fnode.appendChild(tnode1);
+fnode.appendChild(enode1);
+fnode.appendChild(tnode2);
+}
+
+
+function check(obj,attribute){
+if (start) {begin(); start=false;}
+id = obj.getAttribute("id");
+switch(id){ // switch on all id to set td corresponding to user selection
+//Design
+case "feedbackdesignPoor":
+tableelemt=document.getElementById("designval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="red";
+break;
+case "feedbackdesignAvg":
+tableelemt=document.getElementById("designval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="blue";
+break;
+case "feedbackdesignExcellent":
+tableelemt=document.getElementById("designval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="green";
+break;
+
+//Content
+case "feedbackContentPoor":
+tableelemt=document.getElementById("contentval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="red";
+break;
+case "feedbackContentAvg":
+tableelemt=document.getElementById("contentval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="blue";
+break;
+case "feedbackContentExcellent":
+tableelemt=document.getElementById("contentval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="green";
+break;
+
+//Appearance
+case "feedbackappPoor":
+tableelemt=document.getElementById("appval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="red";
+break;
+case "feedbackappAvg":
+tableelemt=document.getElementById("appval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="blue";
+break;
+case "feedbackappExcellent":
+tableelemt=document.getElementById("appval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="green";
+break;
+
+//Overall
+case "feedbackOverallPoor":
+tableelemt=document.getElementById("overallval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="red";
+break;
+case "feedbackOverallAvg":
+tableelemt=document.getElementById("overallval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="blue";
+break;
+case "feedbackOverallExcellent":
+tableelemt=document.getElementById("overallval");
+tableelemt.innerHTML =attribute;
+tableelemt.style.color="green";
+break;
+}
+CheckIfTableIsFilled();
+}
+
+function CheckIfTableIsFilled()
+{
+var table = document.getElementsByTagName("td");
+var array = Array.prototype.slice.call(table, 0)
+count=0;
+for (var i = 0; i < array.length; ++i) { //loop through the array to identify blank td elements
+	if (array[i].innerHTML =="")
+	{
+	
+		count++;
+	}
+}
+if(count==0)
+{
+if(popupcount==0) //to handle multiple popups
+{
+alert("Thank you for completing the feedback form!")
+popupcount++;
+}
+}
+};
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li class=#active><a href="Education.html">Education</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+		<li><a href="Projects.html">Projects</a></li>
+		<li><a href="Feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Feedback</li>
+            </ol>
+        </nav>
+
+  
+<div class="container-fluid bg-3 text-center">    
+<div class="row">
+<div class="col-md-12 text-center">
+                <h1>FEEDBACK</h1>
+                </div>
+<div class="col-md-12 ">
+<div class="panel panel-default">
+<div class="row">
+<div class="col-md-6">
+  <label for="lblAskDesign"><b>1) How was the design?</b></label></br>
+	<div class="radio">
+      <label><input type="radio" name="optDesign" id ="feedbackdesignPoor" onclick=check(this,"Poor")>Poor</label></br>
+      <label><input type="radio" name="optDesign" id ="feedbackdesignAvg" onclick=check(this,"Average")>Average</label></br>
+      <label><input type="radio" name="optDesign" id ="feedbackdesignExcellent" onclick=check(this,"Excellent")>Excellent</label>
+    </div>
+</div>
+<div class="col-md-6">
+    <label for="lblAskDesign"><b>2) How was the content?</b></label></br>
+	<div class="radio">
+      <label><input type="radio" name="optContent" id ="feedbackContentPoor" onclick=check(this,"Poor")>Poor</label></br>
+      <label><input type="radio" name="optContent" id ="feedbackContentAvg" onclick=check(this,"Average")>Average</label></br>
+      <label><input type="radio" name="optContent" id ="feedbackContentExcellent" onclick=check(this,"Excellent")>Excellent</label>
+    </div>
+    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+  </div>
+  </div>
+  <div class="row">
+<div class="col-sm-6">
+	<label for="lblAsk"><b>3) How was the appearance?</b></label></br>
+	<div class="radio">
+      <label><input type="radio" name="optApp" id ="feedbackappPoor" onclick=check(this,"Poor")>Poor</label></br>
+      <label><input type="radio" name="optApp" id ="feedbackappAvg" onclick=check(this,"Average")>Average</label></br>
+      <label><input type="radio" name="optApp" id ="feedbackappExcellent" onclick=check(this,"Excellent")>Excellent</label>
+    </div>
+    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+  </div>
+  <div class="col-lg-6">
+  <label for="lblAskDesign"><b>4) Overall Rating?</b></label></br>
+     <div class="radio">
+      <label><input type="radio" name="optOvr" id ="feedbackOverallPoor" onclick=check(this,"Poor")>Poor</label></br>
+      <label><input type="radio" name="optOvr" id ="feedbackOverallAvg" onclick=check(this,"Average")>Average</label></br>
+      <label><input type="radio" name="optOvr" id ="feedbackOverallExcellent" onclick=check(this,"Excellent")>Excellent</label></br>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</form>
+<div class="col-md-12">
+<div class="panel">
+<div class="row" >
+    <div class="panel-body" ><center><h2><u>Summary Page<u></h2></center></div></br></br></br>
+	<h4><center><small>Peformance Report</small></center></h4>
+	
+	<div id="nodeEx"></div>
+	</div>
+		<div class="row"><div class="col-sm-3"></div>
+		<div class="col-sm-6">
+	<table class="table table-bordered" id="tbloutput">
+  <thead>
+    <tr>
+      <th scope="col">Attribute</th>
+      <th scope="col">Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>Design</td>
+      <td id="designval"></td>
+  </tr>
+  <tr>
+  <td>Content</td>
+      <td id="contentval"></td>
+  </tr>
+  <tr>
+  <td>Appearance</td>
+      <td id="appval"></td>
+  </tr>
+  <tr>
+  <td>Overall</td>
+      <td id="overallval"></td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Prathamesh Marathe 2018 <span class="glyphicon glyphicon-copyright-mark"></span></p>
+</footer>
+
+</body>
+</html>
