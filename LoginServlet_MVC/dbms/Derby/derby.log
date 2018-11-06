@@ -1,0 +1,31 @@
+Sat Nov 03 18:10:07 EDT 2018 : Apache Derby Network Server - 10.13.1.1 - (Unversioned directory) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sat Nov 03 18:41:05 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory): instance a816c00e-0166-dba0-4af2-0000572224a0 
+on database directory C:\Users\Prathamesh Marathe\AppData\Roaming\NetBeans\Derby\Assignment3 with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Users/Prathamesh%20Marathe/Downloads/glassfish-5.0(1)/glassfish5/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Users\Prathamesh Marathe\Downloads\glassfish-5.0(1)\glassfish5\javadb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Prathamesh Marathe\AppData\Roaming\NetBeans\Derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Nov 03 18:41:11 EDT 2018:
+Shutting down instance a816c00e-0166-dba0-4af2-0000572224a0 on database directory C:\Users\Prathamesh Marathe\AppData\Roaming\NetBeans\Derby\Assignment3 with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Sat Nov 03 18:41:12 EDT 2018 Thread[DRDAConnThread_3,5,main] (DATABASE = Assignment3), (DRDAID = {2}), Database 'Assignment3' shutdown.
+----------------------------------------------------------------
+Sat Nov 03 18:41:17 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (Unversioned directory): instance 6ede40af-0166-dba0-4af2-0000572224a0 
+on database directory C:\Users\Prathamesh Marathe\AppData\Roaming\NetBeans\Derby\Assignment3 with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Users/Prathamesh%20Marathe/Downloads/glassfish-5.0(1)/glassfish5/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Users\Prathamesh Marathe\Downloads\glassfish-5.0(1)\glassfish5\javadb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Prathamesh Marathe\AppData\Roaming\NetBeans\Derby
+Database Class Loader started - derby.database.classpath=''
